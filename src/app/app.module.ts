@@ -9,6 +9,8 @@ import { Ex3Component } from './components/ex3/ex3.component';
 import { Ex4Component } from './components/ex4/ex4.component';
 import { Ex5Component } from './components/ex5/ex5.component';
 import { Ex6Component } from './components/ex6/ex6.component';
+import { Ex7Component } from './components/ex7/ex7.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,11 @@ import { Ex6Component } from './components/ex6/ex6.component';
     Ex3Component,
     Ex4Component,
     Ex5Component,
-    Ex6Component
+    Ex6Component,
+    Ex7Component,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

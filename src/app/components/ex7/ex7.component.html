@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <label for="cidade" class="form-label">Digite sua cidade natal</label>
+      <input
+        type="text"
+        class="form-control"
+        id="cidade"
+        name="cidade"
+        #cidade
+      />
+      <button class="mt-2 btn btn-primary" (click)="validaInput(cidade.value)">
+        Enviar cidade
+      </button>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col">
+      <p class="alert alert-success" *ngIf="inputValido">Cidade válida</p>
+      <p class="alert alert-danger" *ngIf="inputValido === false">
+        Cidade inválida
+      </p>
+    </div>
+  </div>
+</div>
