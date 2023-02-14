@@ -11,6 +11,7 @@ import { Ex5Component } from './components/ex5/ex5.component';
 import { Ex6Component } from './components/ex6/ex6.component';
 import { Ex7Component } from './components/ex7/ex7.component';
 import { FormsModule } from '@angular/forms';
+import { Ex8Component } from './components/ex8/ex8.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     Ex5Component,
     Ex6Component,
     Ex7Component,
+    Ex8Component,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
