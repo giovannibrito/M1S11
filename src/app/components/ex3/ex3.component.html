@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="card-group">
+    <div class="card" *ngFor="let foto of arrayFotos">
+      <img [src]="foto.url" class="card-img-top" [alt]="foto.description" />
+      <div class="card-body">
+        <p class="card-text">
+          {{ foto.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
